@@ -3,7 +3,6 @@
 PHASE 1 — DATA INTAKE PIPELINE & CLEANING
 ===============================================================================
 Competition : Data Vortex – Rebuilding the Social Engine (Round 1)
-Author      : Data Engineering Pipeline
 Description : Loads the two raw/corrupted CSVs, profiles data-quality issues,
               applies deterministic cleaning transformations with full
               justification, and exports the finalized cleaned dataset.
