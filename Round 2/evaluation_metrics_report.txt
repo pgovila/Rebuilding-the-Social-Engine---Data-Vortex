@@ -1,0 +1,75 @@
+==============================================================================
+  DATA VORTEX ROUND 2 — EVALUATION METRICS REPORT
+  Generated: 2026-09-17 23:55:10
+==============================================================================
+
+──────────────────────────────────────────────────────────────────────────────
+  TASK A: SENTIMENT CLASSIFICATION
+──────────────────────────────────────────────────────────────────────────────
+
+  5-Fold CV Macro-F1: 0.6428 ± 0.0047
+
+  Test Set Classification Report:
+
+              precision    recall  f1-score   support
+
+    Negative     0.7035    0.7421    0.7223       601
+     Neutral     0.6104    0.5676    0.5882       599
+    Positive     0.6486    0.6583    0.6534       600
+
+    accuracy                         0.6561      1800
+   macro avg     0.6542    0.6560    0.6546      1800
+weighted avg     0.6542    0.6561    0.6547      1800
+
+  Overall Accuracy     : 0.6561
+  Overall Macro F1     : 0.6546
+  Overall Weighted F1  : 0.6547
+
+  Confusion Matrix (True \ Predicted):
+
+             Negative  Neutral  Positive
+True \ Pred                             
+Negative          446       82        73
+Neutral           118      340       141
+Positive           70      135       395
+
+
+──────────────────────────────────────────────────────────────────────────────
+  TASK B: TOPIC CATEGORY CLASSIFICATION
+──────────────────────────────────────────────────────────────────────────────
+
+  5-Fold CV Macro-F1: 0.6930 ± 0.0420
+
+  Test Set Classification Report:
+
+                      precision    recall  f1-score   support
+
+    Account_Security     0.9167    0.4074    0.5641        27
+Community_Discussion     0.9416    0.9994    0.9696      1550
+    Feature_Feedback     0.9655    0.4667    0.6292        60
+    Technical_Issues     1.0000    0.6994    0.8231       163
+
+            accuracy                         0.9456      1800
+           macro avg     0.9560    0.6432    0.7465      1800
+        weighted avg     0.9473    0.9456    0.9389      1800
+
+  Overall Accuracy     : 0.9456
+  Overall Macro F1     : 0.7465
+  Overall Weighted F1  : 0.9389
+
+  Confusion Matrix (True \ Predicted):
+
+                      Account_Security  Community_Discussion  Feature_Feedback  Technical_Issues
+True \ Pred                                                                                     
+Account_Security                    11                    16                 0                 0
+Community_Discussion                 0                  1549                 1                 0
+Feature_Feedback                     0                    32                28                 0
+Technical_Issues                     1                    48                 0               114
+
+
+==============================================================================
+  SUMMARY
+==============================================================================
+  Sentiment  — Macro F1: 0.6546  |  Weighted F1: 0.6547
+  Topic      — Macro F1: 0.7465  |  Weighted F1: 0.9389
+==============================================================================
