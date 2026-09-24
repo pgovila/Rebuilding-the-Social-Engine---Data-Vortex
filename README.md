@@ -45,12 +45,7 @@ streamlit run app.py
 
 ## ☁️ Deploying to Streamlit Community Cloud
 
-1. Push this repository to your **GitHub** account.
-2. Log into [Streamlit Community Cloud](https://share.streamlit.io/).
-3. Click **"New app"**.
-4. Select your repository: `<YOUR_USERNAME>/<REPO_NAME>`.
-5. Set **Main file path** to: `app.py`.
-6. Click **"Deploy!"**.
+https://silent-failure-telemetry.streamlit.app/
 
 ---
 
