@@ -1,0 +1,91 @@
+================================================================================
+PHASE 2: SQL ANALYTICAL QUERIES - EXECUTION RESULTS
+================================================================================
+
+--------------------------------------------------------------------------------
+  E2: MOST ENGAGED POSTS (Top 10)
+--------------------------------------------------------------------------------
+ engagement_rank      post_id       user_id  platform                                                                     text_preview  likes  shares  comments  total_engagement          location  follower_count
+               1 ycjj5zzt7mvx user_d9971ba6 Instagram Coca-Cola HolidaySpecial is fantastic! Can't wait to see what's coming next. #Tr   4983    1919       991              7893        Dubai, UAE           13964
+               2 wo7py9aljg3t user_o8le7hqf    Reddit Attended the Nike LaunchWave event yesterday. Best purchase ever. #NewRelease, #   4864    1981       948              7793     Paris, France           13313
+               3 gmoeib832zbs user_pe5yckyb  Facebook Should I upgrade about Apple's iPhone 15? @TechHelp, @CelebrityName #Fashion Rea   4902    1880       982              7764     Madrid, Spain           33737
+               4 5kvuyvf38nqx user_z0feut2e   YouTube Just tried the Sprite from Coca-Cola. Worth every penny. #MustHave, #BestValue R   4923    1971       861              7755      Milan, Italy           30461
+               5 pvfl3d8hj7jd user_csluibwk Instagram Just tried the Eero WiFi from Amazon. Highly recommend. #Eco, #Lifestyle, #Custo   4989    1840       909              7738      Tokyo, Japan           19091
+               6 tdgjjylpua20 user_8nvzxsuj       NaN Comparing Adidas Samba to the competition. Had issues with it. #Limited, #Food C   4979    1932       812              7723 Vancouver, Canada           36383
+               7 tne7s3o4l4wd user_lr3fagdl Instagram Just unboxed my new Coke Zero from Coca-Cola. Had issues with it. Could someone    4931    1903       878              7712     Paris, France           21509
+               8 a1kiwl618kzy user_aaiari8o  Facebook Just tried the Zoom Pegasus from Nike. Wouldn't recommend. #Sale, #Trending Real   4811    1952       920              7683       Rome, Italy           16038
+               9 fp89q1ickn9w user_h4lueh1i   Twitter                                                                              NaN   4740    1933       955              7628 Sydney, Australia           17902
+              10 5n161ir5hhhr user_u98jwp3f   YouTube Just unboxed my new NMD from Adidas. Not worth the money. Fed up #Premium, #Qual   4751    1981       878              7610      Chicago, USA           49936
+
+Rows returned: 10
+
+--------------------------------------------------------------------------------
+  M5: DETECT SUSPICIOUS ENGAGEMENT (Top 20)
+--------------------------------------------------------------------------------
+ suspicion_rank      post_id       user_id  platform                                                 text_preview  likes  shares  comments  likes_plus_comments  share_surplus  share_pct_of_total                   location  follower_count
+              1 euvr0r10wrj6 user_irfxbf0q  Facebook Just unboxed my new Zoom Pegasus from Nike. Wouldn't recomme    453    2000       408                  861           1139                69.9 Johannesburg, South Africa            3238
+              2 2xcg9ld7du67 user_6w7t1ijr   Twitter Just tried the Kindle from Amazon. Does the job. #Sale, #Tre   1425    1999       440                 1865            134                51.7               Milan, Italy           27442
+              3 qq86lkjrfzlt user_wouds22l   YouTube Just unboxed my new RAV4 from Toyota. Not worth the money. F    897    1999       850                 1747            252                53.4           Los Angeles, USA           44825
+              4 oiszojqm6qnn user_rscyqide Instagram Just unboxed my new Vision Pro from Apple. Wouldn't recommen    390    1999       858                 1248            751                61.6            Shanghai, China            4478
+              5 sjv1fkkjr8e1 user_evp5iscs       NaN                                                          NaN   1524    1998       129                 1653            345                54.7            Shanghai, China           20700
+              6 rryxmp0nra55 user_nf5l9rnd Instagram Comparing Microsoft Xbox Series X to the competition. Exceed    981    1997       958                 1939             58                50.7 Johannesburg, South Africa           34045
+              7 zvj4ja8bp4xx user_zmk7o7v0       NaN Just saw an ad for Coca-Cola Coke Zero during the DigitalTra   1503    1997       338                 1841            156                52.0        Mexico City, Mexico           14414
+              8 x8wq022t0pa5 user_eatb59cy       NaN                                                          NaN   1380    1997       201                 1581            416                55.8        Mexico City, Mexico           39881
+              9 f2e5kdfldedz user_kk1qdsq3       NaN Has anyone else experienced connectivity issues with Nike's     447    1997       641                 1088            909                64.7              New York, USA           32189
+             10 lx50tyodyt6m user_4ol58cyf Instagram Samsung ReferralBonus is decent! Can't wait to see what's co   1545    1996        63                 1608            388                55.4               Lyon, France           22618
+             11 8leyamlw9c72 user_7rdiojrn    Reddit Comparing Amazon Halo Band to the competition. Highly recomm    947    1994       331                 1278            716                60.9              Mumbai, India           40870
+             12 mgv7p46wzpek user_653h4bmg    Reddit Just tried the Diet Pepsi from Pepsi. Worth every penny. #Sp    252    1993       971                 1223            770                62.0            Berlin, Germany           38484
+             13 mgjoprfiflsm user_8relh62l  Facebook Just saw an ad for Google Pixel Watch during the CyberMonday    803    1992       644                 1447            545                57.9            Munich, Germany            1151
+             14 ib1a4n09l99i user_dcrkgrb5    Reddit                                                          NaN    632    1992       728                 1360            632                59.4                  Singapore           27599
+             15 u1aa801qvxeu user_q2stxtlj       NaN Just saw an ad for Amazon Echo Dot during the InnovationX. R    162    1992       306                  468           1524                81.0        Mexico City, Mexico           44195
+             16 0nsga7zrxpvt user_c7t5ufm1   YouTube Attended the Samsung ValentinesDeals event yesterday. Return    390    1991       848                 1238            753                61.7               Tokyo, Japan           30697
+             17 8d1dbq225yud user_mpu4oig7 Instagram Frustrated with my new Fire TV from Amazon! Absolutely lovin    539    1991       544                 1083            908                64.8               Osaka, Japan           23515
+             18 6s9mxoemn488 user_x87qma0e   Twitter Attended the Microsoft DigitalTransformation event yesterday    169    1991       856                 1025            966                66.0             Lagos, Nigeria           39223
+             19 lit2hyqg0v0l user_xn2a0g8z  Facebook Nike BackToSchool is subpar! Can't wait to see what's coming     14    1990       769                  783           1207                71.8            Shanghai, China           45029
+             20 twgx52qb72eo user_x24wilk1   YouTube Cannot believe with my new Air Force 1 from Nike! As expecte    462    1989       636                 1098            891                64.4                 London, UK           35907
+
+Rows returned: 20
+Total suspicious posts (shares > likes+comments): 1209
+
+--------------------------------------------------------------------------------
+  H5: IDENTIFY DATA ANOMALIES (Top 5 per Category)
+--------------------------------------------------------------------------------
+      anomaly_type  category_total  row_within_category      post_id       user_id  platform                                       text_preview      flagged_value                               anomaly_description
+HTML_CONTAMINATION            1004                    1 003s4ulm32tk user_nwe87ftw    Reddit Any advice about Amazon's Eero WiFi? @CustomerServ    <div> tag found Text contains raw HTML tags or unescaped entities
+HTML_CONTAMINATION            1004                    2 0066x8nnmouc user_uioec9tu       NaN Attended the Microsoft DigitalTransformation event     <br> tag found Text contains raw HTML tags or unescaped entities
+HTML_CONTAMINATION            1004                    3 02vdvvsovgsk user_xnin9vng Instagram Bummed out with my new Diet Pepsi from Pepsi! Not  &amp; entity found Text contains raw HTML tags or unescaped entities
+HTML_CONTAMINATION            1004                    4 030vdql1vwxl user_mc45jax7  Facebook My one week review of Nike Zoom Pegasus: Highly re &amp; entity found Text contains raw HTML tags or unescaped entities
+HTML_CONTAMINATION            1004                    5 033nh4sa358q user_xiajv4r3 Instagram Attended the Adidas NewYearNewYou event yesterday.    <div> tag found Text contains raw HTML tags or unescaped entities
+  MISSING_PLATFORM            1846                    1 0066x8nnmouc user_uioec9tu       NaN Attended the Microsoft DigitalTransformation event                NaN        Platform metadata is absent or null-string
+  MISSING_PLATFORM            1846                    2 00u9otx16xfc user_vc1szta6       NaN Just tried the Epic React from Nike. Highly recomm                NaN        Platform metadata is absent or null-string
+  MISSING_PLATFORM            1846                    3 01kgwhi645er user_0xmoolhz       NaN Just tried the Surface Pro from Microsoft. Disappo                NaN        Platform metadata is absent or null-string
+  MISSING_PLATFORM            1846                    4 02b0vyoya4hz user_38xako3d       NaN Just unboxed my new Crystal Pepsi from Pepsi. Best                NaN        Platform metadata is absent or null-string
+  MISSING_PLATFORM            1846                    5 033i6hfsrdo8 user_1cz5m9ov       NaN                                                NaN                NaN        Platform metadata is absent or null-string
+      MISSING_TEXT            1746                    1 00pk8aa72o8x user_i5gyaj59 Instagram                                                NaN             <NULL>        Post body is absent, empty, or null-string
+      MISSING_TEXT            1746                    2 014e8jqloj6h user_cw087eow  Facebook                                                NaN             <NULL>        Post body is absent, empty, or null-string
+      MISSING_TEXT            1746                    3 01gbk9id4v75 user_slqlepta    Reddit                                                NaN             <NULL>        Post body is absent, empty, or null-string
+      MISSING_TEXT            1746                    4 033i6hfsrdo8 user_1cz5m9ov       NaN                                                NaN             <NULL>        Post body is absent, empty, or null-string
+      MISSING_TEXT            1746                    5 034s727kuo8m user_vfxs1pry   YouTube                                                NaN             <NULL>        Post body is absent, empty, or null-string
+    NEGATIVE_LIKES             525                    1 005g54tmt26m user_oo2yuqwk  Facebook Just unboxed my new MacBook Pro from Apple. Best p             -997.0   Engagement metric has impossible negative value
+    NEGATIVE_LIKES             525                    2 01kgwhi645er user_0xmoolhz       NaN Just tried the Surface Pro from Microsoft. Disappo            -3630.0   Engagement metric has impossible negative value
+    NEGATIVE_LIKES             525                    3 07pmruq4kog9 user_yhkk65jx   Twitter Just tried the Crystal Pepsi from Pepsi. Best purc            -4126.0   Engagement metric has impossible negative value
+    NEGATIVE_LIKES             525                    4 0c0tc7wbhqdu user_m2ziq5ox Instagram Comparing Google Nest Thermostat to the competitio            -1165.0   Engagement metric has impossible negative value
+    NEGATIVE_LIKES             525                    5 0cd8ztjdq57w user_0ovhak73   YouTube Has anyone else experienced customer service with             -3962.0   Engagement metric has impossible negative value
+
+--------------------------------------------------------------------------------
+  H5: ANOMALY SUMMARY (Full Counts)
+--------------------------------------------------------------------------------
+      anomaly_type  record_count  affected_users  pct_of_total
+  MISSING_PLATFORM          1846            1060         14.94
+      MISSING_TEXT          1746            1017         14.13
+HTML_CONTAMINATION          1004             720          8.12
+    NEGATIVE_LIKES           525             435          4.25
+
+Total anomalous records: 5121
+Total raw records: 12360
+Overall data corruption rate: 41.4%
+Duplicate post_ids: 352
+
+================================================================================
+ALL PHASE 2 QUERIES EXECUTED SUCCESSFULLY
+================================================================================
